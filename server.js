@@ -3,10 +3,15 @@ const axios = require('axios');
 const cors = require('cors');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+// Railway otomatik olarak PORT environment variable'ını set eder
+const PORT = process.env.PORT || 8080; // 8080 olarak değiştir
 
 app.use(cors());
 app.use(express.json());
+
+app.get('/health', (req, res) => {
+  res.json({ status: 'OK', timestamp: new Date().toISOString() });
+});
 
 app.post('/api/analyze-dream', async (req, res) => {
   try {
