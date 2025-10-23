@@ -82,7 +82,7 @@ app.post('/api/analyze-dream', rateLimit, authenticateAPI, async (req, res) => {
 - Calvin Hall: (Hall'un teorisine göre analiz. TEK CÜMLE CEVAP VER)
 - Erik Erikson: (Erikson'un teorisine göre analiz. TEK CÜMLE CEVAP VER)
 
-ÖNEMLİ: Sadece yukarıdaki formatı kullan. Başka format kullanma. ${language} dilinde yanıt ver.`;
+ÖNEMLİ: Sadece yukarıdaki formatı kullan. Başka format kullanma. KESİNLİKLE ${language} dilinde yanıt ver.`;
 
     // Groq API'ye istek
     const groqResponse = await axios.post('https://api.groq.com/openai/v1/chat/completions', {
