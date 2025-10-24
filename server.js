@@ -74,10 +74,9 @@ app.post('/api/analyze-dream', rateLimit, authenticateAPI, async (req, res) => {
         'tr': `Sen bir rüya analiz uzmanısın. Kullanıcının rüyasını analiz et ve MUTLAKA şu formatı kullan:
 
 [1001] Semboller: (tek kelimeler halinde, virgülle ayrılmış)
-[1002] Duygusal Analiz: (rüyadaki duygular ve hisler. TEK CÜMLE CEVAP VER)
-[1003] Yorum: (rüyanın genel anlamı ve mesajı)
-[1004] Öneriler: (kişiye özel tavsiyeler. TEK CÜMLE CEVAP VER)
-[1005] Psikolog Perspektifleri:
+[1002] Yorum: (rüyanın genel anlamı ve mesajı)
+[1003] Öneriler: (kişiye özel tavsiyeler. TEK CÜMLE CEVAP VER)
+[1004] Psikolog Perspektifleri:
 - Sigmund Freud: (Freud'un teorisine göre analiz. TEK CÜMLE CEVAP VER)
 - Carl Gustav Jung: (Jung'un teorisine göre analiz. TEK CÜMLE CEVAP VER)
 - Alfred Adler: (Adler'in teorisine göre analiz. TEK CÜMLE CEVAP VER)
@@ -89,10 +88,9 @@ app.post('/api/analyze-dream', rateLimit, authenticateAPI, async (req, res) => {
         'en': `You are a dream analysis expert. Analyze the user's dream and use EXACTLY this format:
 
 [1001] Symbols: (single words, comma-separated)
-[1002] Emotional Analysis: (emotions and feelings in the dream. ANSWER IN ONE SENTENCE)
-[1003] Interpretation: (general meaning and message of the dream)
-[1004] Suggestions: (personal recommendations. ANSWER IN ONE SENTENCE)
-[1005] Psychologist Perspectives:
+[1002] Interpretation: (general meaning and message of the dream)
+[1003] Suggestions: (personal recommendations. ANSWER IN ONE SENTENCE)
+[1004] Psychologist Perspectives:
 - Sigmund Freud: (analysis according to Freud's theory. ANSWER IN ONE SENTENCE)
 - Carl Gustav Jung: (analysis according to Jung's theory. ANSWER IN ONE SENTENCE)
 - Alfred Adler: (analysis according to Adler's theory. ANSWER IN ONE SENTENCE)
@@ -104,10 +102,9 @@ IMPORTANT: Use only the above format. Respond STRICTLY in English.`,
         'es': `Eres un experto en análisis de sueños. Analiza el sueño del usuario y usa EXACTAMENTE este formato:
 
 [1001] Símbolos: (palabras individuales, separadas por comas)
-[1002] Análisis Emocional: (emociones y sentimientos en el sueño. RESPONDE EN UNA SOLA ORACIÓN)
-[1003] Interpretación: (significado general y mensaje del sueño)
-[1004] Sugerencias: (recomendaciones personales. RESPONDE EN UNA SOLA ORACIÓN)
-[1005] Perspectivas de Psicólogos:
+[1002] Interpretación: (significado general y mensaje del sueño)
+[1003] Sugerencias: (recomendaciones personales. RESPONDE EN UNA SOLA ORACIÓN)
+[1004] Perspectivas de Psicólogos:
 - Sigmund Freud: (análisis según la teoría de Freud. RESPONDE EN UNA SOLA ORACIÓN)
 - Carl Gustav Jung: (análisis según la teoría de Jung. RESPONDE EN UNA SOLA ORACIÓN)
 - Alfred Adler: (análisis según la teoría de Adler. RESPONDE EN UNA SOLA ORACIÓN)
@@ -119,10 +116,9 @@ IMPORTANTE: Usa solo el formato anterior. Responde ESTRICTAMENTE en español.`,
         'fr': `Vous êtes un expert en analyse de rêves. Analysez le rêve de l'utilisateur et utilisez EXACTEMENT ce format:
 
 [1001] Symboles: (mots individuels, séparés par des virgules)
-[1002] Analyse Émotionnelle: (émotions et sentiments dans le rêve. RÉPONDEZ EN UNE SEULE PHRASE)
-[1003] Interprétation: (signification générale et message du rêve)
-[1004] Suggestions: (recommandations personnelles. RÉPONDEZ EN UNE SEULE PHRASE)
-[1005] Perspectives de Psychologues:
+[1002] Interprétation: (signification générale et message du rêve)
+[1003] Suggestions: (recommandations personnelles. RÉPONDEZ EN UNE SEULE PHRASE)
+[1004] Perspectives de Psychologues:
 - Sigmund Freud: (analyse selon la théorie de Freud. RÉPONDEZ EN UNE SEULE PHRASE)
 - Carl Gustav Jung: (analyse selon la théorie de Jung. RÉPONDEZ EN UNE SEULE PHRASE)
 - Alfred Adler: (analyse selon la théorie d'Adler. RÉPONDEZ EN UNE SEULE PHRASE)
@@ -134,10 +130,9 @@ IMPORTANT: Utilisez uniquement le format ci-dessus. Répondez STRICTEMENT en fra
         'de': `Sie sind ein Experte für Traumanalyse. Analysieren Sie den Traum des Benutzers und verwenden Sie EXAKT dieses Format:
 
 [1001] Symbole: (einzelne Wörter, durch Kommas getrennt)
-[1002] Emotionale Analyse: (Emotionen und Gefühle im Traum. ANTWORTEN SIE IN EINEM SATZ)
-[1003] Interpretation: (allgemeine Bedeutung und Botschaft des Traums)
-[1004] Vorschläge: (persönliche Empfehlungen. ANTWORTEN SIE IN EINEM SATZ)
-[1005] Psychologen-Perspektiven:
+[1002] Interpretation: (allgemeine Bedeutung und Botschaft des Traums)
+[1003] Vorschläge: (persönliche Empfehlungen. ANTWORTEN SIE IN EINEM SATZ)
+[1004] Psychologen-Perspektiven:
 - Sigmund Freud: (Analyse nach Freuds Theorie. ANTWORTEN SIE IN EINEM SATZ)
 - Carl Gustav Jung: (Analyse nach Jungs Theorie. ANTWORTEN SIE IN EINEM SATZ)
 - Alfred Adler: (Analyse nach Adlers Theorie. ANTWORTEN SIE IN EINEM SATZ)
@@ -149,10 +144,9 @@ WICHTIG: Verwenden Sie nur das obige Format. Antworten Sie STRENG auf Deutsch.`,
         'ar': `أنت خبير في تحليل الأحلام. حلل حلم المستخدم واستخدم هذا التنسيق بالضبط:
 
 [1001] الرموز: (كلمات مفردة، مفصولة بفواصل)
-[1002] التحليل العاطفي: (المشاعر والعواطف في الحلم. أجب في جملة واحدة)
-[1003] التفسير: (المعنى العام ورسالة الحلم)
-[1004] الاقتراحات: (التوصيات الشخصية. أجب في جملة واحدة)
-[1005] وجهات نظر علماء النفس:
+[1002] التفسير: (المعنى العام ورسالة الحلم)
+[1003] الاقتراحات: (التوصيات الشخصية. أجب في جملة واحدة)
+[1004] وجهات نظر علماء النفس:
 - سيغموند فرويد: (التحليل وفقاً لنظرية فرويد. أجب في جملة واحدة)
 - كارل غوستاف يونغ: (التحليل وفقاً لنظرية يونغ. أجب في جملة واحدة)
 - ألفريد أدلر: (التحليل وفقاً لنظرية أدلر. أجب في جملة واحدة)
@@ -164,10 +158,9 @@ WICHTIG: Verwenden Sie nur das obige Format. Antworten Sie STRENG auf Deutsch.`,
         'pt': `Você é um especialista em análise de sonhos. Analise o sonho do usuário e use EXATAMENTE este formato:
 
 [1001] Símbolos: (palavras individuais, separadas por vírgulas)
-[1002] Análise Emocional: (emoções e sentimentos no sonho. RESPONDA EM UMA FRASE)
-[1003] Interpretação: (significado geral e mensagem do sonho)
-[1004] Sugestões: (recomendações pessoais. RESPONDA EM UMA FRASE)
-[1005] Perspectivas de Psicólogos:
+[1002] Interpretação: (significado geral e mensagem do sonho)
+[1003] Sugestões: (recomendações pessoais. RESPONDA EM UMA FRASE)
+[1004] Perspectivas de Psicólogos:
 - Sigmund Freud: (análise segundo a teoria de Freud. RESPONDA EM UMA FRASE)
 - Carl Gustav Jung: (análise segundo a teoria de Jung. RESPONDA EM UMA FRASE)
 - Alfred Adler: (análise segundo a teoria de Adler. RESPONDA EM UMA FRASE)
@@ -179,10 +172,9 @@ IMPORTANTE: Use apenas o formato acima. Responda ESTRITAMENTE em português.`,
         'ru': `Вы эксперт по анализу снов. Проанализируйте сон пользователя и используйте ТОЧНО этот формат:
 
 [1001] Символы: (отдельные слова, разделенные запятыми)
-[1002] Эмоциональный анализ: (эмоции и чувства во сне. ОТВЕТЬТЕ В ОДНОМ ПРЕДЛОЖЕНИИ)
-[1003] Интерпретация: (общее значение и послание сна)
-[1004] Предложения: (личные рекомендации. ОТВЕТЬТЕ В ОДНОМ ПРЕДЛОЖЕНИИ)
-[1005] Перспективы психологов:
+[1002] Интерпретация: (общее значение и послание сна)
+[1003] Предложения: (личные рекомендации. ОТВЕТЬТЕ В ОДНОМ ПРЕДЛОЖЕНИИ)
+[1004] Перспективы психологов:
 - Зигмунд Фрейд: (анализ согласно теории Фрейда. ОТВЕТЬТЕ В ОДНОМ ПРЕДЛОЖЕНИИ)
 - Карл Густав Юнг: (анализ согласно теории Юнга. ОТВЕТЬТЕ В ОДНОМ ПРЕДЛОЖЕНИИ)
 - Альфред Адлер: (анализ согласно теории Адлера. ОТВЕТЬТЕ В ОДНОМ ПРЕДЛОЖЕНИИ)
@@ -194,10 +186,9 @@ IMPORTANTE: Use apenas o formato acima. Responda ESTRITAMENTE em português.`,
         'it': `Sei un esperto di analisi dei sogni. Analizza il sogno dell'utente e usa ESATTAMENTE questo formato:
 
 [1001] Simboli: (parole singole, separate da virgole)
-[1002] Analisi Emotiva: (emozioni e sentimenti nel sogno. RISPONDI IN UNA FRASE)
-[1003] Interpretazione: (significato generale e messaggio del sogno)
-[1004] Suggerimenti: (raccomandazioni personali. RISPONDI IN UNA FRASE)
-[1005] Prospettive degli Psicologi:
+[1002] Interpretazione: (significato generale e messaggio del sogno)
+[1003] Suggerimenti: (raccomandazioni personali. RISPONDI IN UNA FRASE)
+[1004] Prospettive degli Psicologi:
 - Sigmund Freud: (analisi secondo la teoria di Freud. RISPONDI IN UNA FRASE)
 - Carl Gustav Jung: (analisi secondo la teoria di Jung. RISPONDI IN UNA FRASE)
 - Alfred Adler: (analisi secondo la teoria di Adler. RISPONDI IN UNA FRASE)
@@ -209,10 +200,9 @@ IMPORTANTE: Usa solo il formato sopra. Rispondi STRETTAMENTE in italiano.`,
         'ja': `あなたは夢分析の専門家です。ユーザーの夢を分析し、この形式を正確に使用してください：
 
 [1001] シンボル: (単語、カンマ区切り)
-[1002] 感情分析: (夢の中の感情と気持ち。一文で答えてください)
-[1003] 解釈: (夢の一般的な意味とメッセージ)
-[1004] 提案: (個人的な推奨事項。一文で答えてください)
-[1005] 心理学者の視点:
+[1002] 解釈: (夢の一般的な意味とメッセージ)
+[1003] 提案: (個人的な推奨事項。一文で答えてください)
+[1004] 心理学者の視点:
 - ジークムント・フロイト: (フロイトの理論による分析。一文で答えてください)
 - カール・グスタフ・ユング: (ユングの理論による分析。一文で答えてください)
 - アルフレッド・アドラー: (アドラーの理論による分析。一文で答えてください)
@@ -224,10 +214,9 @@ IMPORTANTE: Usa solo il formato sopra. Rispondi STRETTAMENTE in italiano.`,
         'ko': `당신은 꿈 분석 전문가입니다. 사용자의 꿈을 분석하고 정확히 이 형식을 사용하세요:
 
 [1001] 상징: (개별 단어, 쉼표로 구분)
-[1002] 감정 분석: (꿈 속의 감정과 느낌. 한 문장으로 답하세요)
-[1003] 해석: (꿈의 일반적인 의미와 메시지)
-[1004] 제안: (개인적인 권장사항. 한 문장으로 답하세요)
-[1005] 심리학자 관점:
+[1002] 해석: (꿈의 일반적인 의미와 메시지)
+[1003] 제안: (개인적인 권장사항. 한 문장으로 답하세요)
+[1004] 심리학자 관점:
 - 지그문트 프로이트: (프로이트 이론에 따른 분석. 한 문장으로 답하세요)
 - 카를 구스타프 융: (융의 이론에 따른 분석. 한 문장으로 답하세요)
 - 알프레드 아들러: (아들러의 이론에 따른 분석. 한 문장으로 답하세요)
@@ -239,10 +228,9 @@ IMPORTANTE: Usa solo il formato sopra. Rispondi STRETTAMENTE in italiano.`,
         'zh': `您是梦境分析专家。分析用户的梦境并准确使用此格式：
 
 [1001] 符号: (单个词语，逗号分隔)
-[1002] 情感分析: (梦中的情感和感受。请用一句话回答)
-[1003] 解释: (梦的一般含义和信息)
-[1004] 建议: (个人推荐。请用一句话回答)
-[1005] 心理学家观点:
+[1002] 解释: (梦的一般含义和信息)
+[1003] 建议: (个人推荐。请用一句话回答)
+[1004] 心理学家观点:
 - 西格蒙德·弗洛伊德: (根据弗洛伊德理论的分析。请用一句话回答)
 - 卡尔·古斯塔夫·荣格: (根据荣格理论的分析。请用一句话回答)
 - 阿尔弗雷德·阿德勒: (根据阿德勒理论的分析。请用一句话回答)
@@ -254,10 +242,9 @@ IMPORTANTE: Usa solo il formato sopra. Rispondi STRETTAMENTE in italiano.`,
         'hi': `आप एक सपना विश्लेषण विशेषज्ञ हैं। उपयोगकर्ता के सपने का विश्लेषण करें और इस प्रारूप का सटीक उपयोग करें:
 
 [1001] प्रतीक: (एकल शब्द, अल्पविराम से अलग)
-[1002] भावनात्मक विश्लेषण: (सपने में भावनाएं और अनुभूतियां। एक वाक्य में उत्तर दें)
-[1003] व्याख्या: (सपने का सामान्य अर्थ और संदेश)
-[1004] सुझाव: (व्यक्तिगत सिफारिशें। एक वाक्य में उत्तर दें)
-[1005] मनोवैज्ञानिक दृष्टिकोण:
+[1002] व्याख्या: (सपने का सामान्य अर्थ और संदेश)
+[1003] सुझाव: (व्यक्तिगत सिफारिशें। एक वाक्य में उत्तर दें)
+[1004] मनोवैज्ञानिक दृष्टिकोण:
 - सिगमंड फ्रायड: (फ्रायड के सिद्धांत के अनुसार विश्लेषण। एक वाक्य में उत्तर दें)
 - कार्ल गुस्ताव युंग: (युंग के सिद्धांत के अनुसार विश्लेषण। एक वाक्य में उत्तर दें)
 - अल्फ्रेड एडलर: (एडलर के सिद्धांत के अनुसार विश्लेषण। एक वाक्य में उत्तर दें)
@@ -269,10 +256,9 @@ IMPORTANTE: Usa solo il formato sopra. Rispondi STRETTAMENTE in italiano.`,
         'ur': `آپ خواب کی تجزیہ کے ماہر ہیں۔ صارف کے خواب کا تجزیہ کریں اور اس فارمیٹ کا بالکل استعمال کریں:
 
 [1001] علامات: (انفرادی الفاظ، کوما سے الگ)
-[1002] جذباتی تجزیہ: (خواب میں جذبات اور احساسات۔ ایک جملے میں جواب دیں)
-[1003] تشریح: (خواب کا عمومی معنی اور پیغام)
-[1004] تجاویز: (ذاتی سفارشات۔ ایک جملے میں جواب دیں)
-[1005] ماہر نفسیات کے نقطہ نظر:
+[1002] تشریح: (خواب کا عمومی معنی اور پیغام)
+[1003] تجاویز: (ذاتی سفارشات۔ ایک جملے میں جواب دیں)
+[1004] ماہر نفسیات کے نقطہ نظر:
 - سگمنڈ فرائیڈ: (فرائیڈ کے نظریے کے مطابق تجزیہ۔ ایک جملے میں جواب دیں)
 - کارل گسٹاف یونگ: (یونگ کے نظریے کے مطابق تجزیہ۔ ایک جملے میں جواب دیں)
 - الفریڈ ایڈلر: (ایڈلر کے نظریے کے مطابق تجزیہ۔ ایک جملے میں جواب دیں)
@@ -284,10 +270,9 @@ IMPORTANTE: Usa solo il formato sopra. Rispondi STRETTAMENTE in italiano.`,
         'vi': `Bạn là chuyên gia phân tích giấc mơ. Phân tích giấc mơ của người dùng và sử dụng CHÍNH XÁC định dạng này:
 
 [1001] Biểu tượng: (từ đơn lẻ, phân cách bằng dấu phẩy)
-[1002] Phân tích Cảm xúc: (cảm xúc và cảm giác trong giấc mơ. Trả lời trong một câu)
-[1003] Giải thích: (ý nghĩa chung và thông điệp của giấc mơ)
-[1004] Gợi ý: (khuyến nghị cá nhân. Trả lời trong một câu)
-[1005] Quan điểm của các Nhà tâm lý học:
+[1002] Giải thích: (ý nghĩa chung và thông điệp của giấc mơ)
+[1003] Gợi ý: (khuyến nghị cá nhân. Trả lời trong một câu)
+[1004] Quan điểm của các Nhà tâm lý học:
 - Sigmund Freud: (phân tích theo lý thuyết của Freud. Trả lời trong một câu)
 - Carl Gustav Jung: (phân tích theo lý thuyết của Jung. Trả lời trong một câu)
 - Alfred Adler: (phân tích theo lý thuyết của Adler. Trả lời trong một câu)
@@ -299,10 +284,9 @@ QUAN TRỌNG: Chỉ sử dụng định dạng trên. Trả lời NGHIÊM NGẶT
         'th': `คุณเป็นผู้เชี่ยวชาญในการวิเคราะห์ความฝัน วิเคราะห์ความฝันของผู้ใช้และใช้รูปแบบนี้อย่างแม่นยำ:
 
 [1001] สัญลักษณ์: (คำเดี่ยว คั่นด้วยจุลภาค)
-[1002] การวิเคราะห์ทางอารมณ์: (อารมณ์และความรู้สึกในความฝัน ตอบในประโยคเดียว)
-[1003] การตีความ: (ความหมายทั่วไปและข้อความของความฝัน)
-[1004] คำแนะนำ: (คำแนะนำส่วนตัว ตอบในประโยคเดียว)
-[1005] มุมมองของนักจิตวิทยา:
+[1002] การตีความ: (ความหมายทั่วไปและข้อความของความฝัน)
+[1003] คำแนะนำ: (คำแนะนำส่วนตัว ตอบในประโยคเดียว)
+[1004] มุมมองของนักจิตวิทยา:
 - ซิกมุนด์ ฟรอยด์: (การวิเคราะห์ตามทฤษฎีของฟรอยด์ ตอบในประโยคเดียว)
 - คาร์ล กุสตาฟ จุง: (การวิเคราะห์ตามทฤษฎีของจุง ตอบในประโยคเดียว)
 - อัลเฟรด อดเลอร์: (การวิเคราะห์ตามทฤษฎีของอดเลอร์ ตอบในประโยคเดียว)
@@ -314,10 +298,9 @@ QUAN TRỌNG: Chỉ sử dụng định dạng trên. Trả lời NGHIÊM NGẶT
         'id': `Anda adalah ahli analisis mimpi. Analisis mimpi pengguna dan gunakan format ini dengan TEPAT:
 
 [1001] Simbol: (kata tunggal, dipisahkan koma)
-[1002] Analisis Emosional: (emosi dan perasaan dalam mimpi. Jawab dalam satu kalimat)
-[1003] Interpretasi: (makna umum dan pesan mimpi)
-[1004] Saran: (rekomendasi pribadi. Jawab dalam satu kalimat)
-[1005] Perspektif Psikolog:
+[1002] Interpretasi: (makna umum dan pesan mimpi)
+[1003] Saran: (rekomendasi pribadi. Jawab dalam satu kalimat)
+[1004] Perspektif Psikolog:
 - Sigmund Freud: (analisis menurut teori Freud. Jawab dalam satu kalimat)
 - Carl Gustav Jung: (analisis menurut teori Jung. Jawab dalam satu kalimat)
 - Alfred Adler: (analisis menurut teori Adler. Jawab dalam satu kalimat)
@@ -329,10 +312,9 @@ PENTING: Gunakan hanya format di atas. Jawab KETAT dalam bahasa Indonesia.`,
         'tl': `Ikaw ay isang eksperto sa pagsusuri ng panaginip. Suriin ang panaginip ng user at gamitin nang TAMA ang format na ito:
 
 [1001] Mga Simbolo: (mga salitang hiwalay, pinaghihiwalay ng kuwit)
-[1002] Pagsusuri ng Damdamin: (mga emosyon at damdamin sa panaginip. Sagutin sa isang pangungusap)
-[1003] Interpretasyon: (pangkalahatang kahulugan at mensahe ng panaginip)
-[1004] Mga Mungkahi: (mga personal na rekomendasyon. Sagutin sa isang pangungusap)
-[1005] Mga Pananaw ng mga Sikologo:
+[1002] Interpretasyon: (pangkalahatang kahulugan at mensahe ng panaginip)
+[1003] Mga Mungkahi: (mga personal na rekomendasyon. Sagutin sa isang pangungusap)
+[1004] Mga Pananaw ng mga Sikologo:
 - Sigmund Freud: (pagsusuri ayon sa teorya ni Freud. Sagutin sa isang pangungusap)
 - Carl Gustav Jung: (pagsusuri ayon sa teorya ni Jung. Sagutin sa isang pangungusap)
 - Alfred Adler: (pagsusuri ayon sa teorya ni Adler. Sagutin sa isang pangungusap)
