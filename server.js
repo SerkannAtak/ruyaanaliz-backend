@@ -331,7 +331,7 @@ MAHALAGA: Gamitin lamang ang format sa itaas. Sumagot nang STRICT sa Tagalog.`
 
     // Groq API'ye istek
     const groqResponse = await axios.post('https://api.groq.com/openai/v1/chat/completions', {
-      model: "llama-3.3-70b-versatile",
+      model: "llama-3.1-8b-instant",
       messages: [
         {
           role: "system",
@@ -397,3 +397,4 @@ app.listen(PORT, () => {
   console.log(`📊 Health check: http://localhost:${PORT}/health`);
   console.log(`🔑 API Key required for /api/analyze-dream`);
 });
+
